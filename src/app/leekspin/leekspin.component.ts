@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button'; 
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-leekspin',
@@ -35,5 +36,18 @@ export class LeekspinComponent {
     }
   }
 
+  constructor(private location: Location) {}
 
+  stopSound() {
+    if (this.audioElement) {
+      this.audioElement.pause();
+      this.audioElement.currentTime = 0; // Reset the audio to the beginning
+      this.isPlaying = false;
+    }
+  }
+  
+  goBack() {
+    this.stopSound();
+    this.location.back();
+  }
 }
