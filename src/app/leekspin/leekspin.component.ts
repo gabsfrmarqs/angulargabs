@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button'; 
 import { Location } from '@angular/common';
 
@@ -16,8 +16,13 @@ export class LeekspinComponent {
     this.playSound();
   }
 
+  ngOnDestroy(){
+    this.stopSound();
+  }
+
   private audioElement: HTMLAudioElement | null = null;
   private isPlaying: boolean = false;
+  private popstateListener: any;
   
   playSound() {
     if (!this.isPlaying) {
