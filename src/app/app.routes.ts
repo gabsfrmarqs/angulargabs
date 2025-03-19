@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LeekspinComponent } from './leekspin/leekspin.component'; 
 import { WhoamiComponent } from './whoami/whoami.component';
+import { ParamoreComponent } from './paramore/paramore.component';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,9 @@ export const routes: Routes = [
     {
         path: 'whoami',
         component: WhoamiComponent,
+    },
+    {
+        path: 'paramore',
+        component: ParamoreComponent,
     }
 ];
