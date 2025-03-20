@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { LeekspinComponent } from './leekspin/leekspin.component'; 
 import { WhoamiComponent } from './whoami/whoami.component';
 import { ParamoreComponent } from './paramore/paramore.component';
+import { OtakuComponent } from './otaku/otaku.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,9 @@ export const routes: Routes = [
     {
         path: 'paramore',
         component: ParamoreComponent,
+    },
+    {
+        path: 'otaku',
+        component: OtakuComponent,
     }
 ];
