@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
 })
 export class OtakuComponent {
   ngOnInit() {
-    window.alert("૮ ˶ᵔ ᵕ ᵔ˶ ა YOU'RE AN OTAKU NOW!! (˶˃ ᵕ ˂˶) .ᐟ.ᐟ");
+    window.alert("૮ ˶ᵔ ᵕ ᵔ˶ ა OTAKU (˶˃ ᵕ ˂˶) .ᐟ.ᐟ");
   }
 
 }

@@ -10,6 +10,7 @@ import { LeekspinComponent } from './leekspin/leekspin.component'
     styleUrl: './app.component.scss',
     imports: [RouterOutlet]
 })
+
 export class AppComponent {
   title = 'angulargabs';
 

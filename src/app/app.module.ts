@@ -12,6 +12,7 @@ import { LeekspinComponent } from './leekspin/leekspin.component';
 import { OtakuComponent } from './otaku/otaku.component';
 import { ParamoreComponent } from './paramore/paramore.component';
 import { WhoamiComponent } from './whoami/whoami.component';
+import { NgOptimizedImage } from '@angular/common';
 
 // Using modules instead of standalone components. As god intended.
 
@@ -31,7 +32,8 @@ import { WhoamiComponent } from './whoami/whoami.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    NgOptimizedImage
   ],
   exports: [
     MatToolbarModule,
@@ -39,7 +41,8 @@ import { WhoamiComponent } from './whoami/whoami.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    NgOptimizedImage
   ]
 })
 
