@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { LeekspinComponent } from '../leekspin/leekspin.component';
-import { RouterModule } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [ RouterModule ],
+  standalone: false,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

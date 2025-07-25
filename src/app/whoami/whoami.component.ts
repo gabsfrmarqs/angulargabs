@@ -3,8 +3,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-whoami',
-  standalone: true,
-  imports: [ RouterModule ],
+  standalone: false,
   templateUrl: './whoami.component.html',
   styleUrl: '../home/home.component.scss'
 })

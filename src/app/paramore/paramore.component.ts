@@ -3,8 +3,7 @@ import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-paramore',
-  standalone: true,
-  imports: [ RouterModule ],
+  standalone: false,
   templateUrl: './paramore.component.html',
   styleUrl: './paramore.component.scss',
   encapsulation: ViewEncapsulation.None

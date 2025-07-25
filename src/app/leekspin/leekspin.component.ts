@@ -4,9 +4,7 @@ import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-leekspin',
-  standalone: true,
-  imports: [MatButtonModule
-  ],
+  standalone: false,
   templateUrl: './leekspin.component.html',
   styleUrl: './leekspin.component.scss'
 })

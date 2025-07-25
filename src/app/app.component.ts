@@ -8,7 +8,7 @@ import { LeekspinComponent } from './leekspin/leekspin.component'
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, HomeComponent, LeekspinComponent]
+    imports: [RouterOutlet]
 })
 export class AppComponent {
   title = 'angulargabs';

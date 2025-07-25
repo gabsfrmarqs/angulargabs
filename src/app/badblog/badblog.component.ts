@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-badblog',
-  standalone: true,
-  imports: [],
+  standalone: false,
   templateUrl: './badblog.component.html',
   styleUrl: './badblog.component.scss'
 })
+
 export class BadblogComponent {
 
 }

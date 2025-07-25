@@ -3,8 +3,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-otaku',
-  standalone: true,
-  imports: [ RouterModule ],
+  standalone: false,
   templateUrl: './otaku.component.html',
   styleUrl: './otaku.component.scss',
   encapsulation: ViewEncapsulation.None //Allows for overriding the global style
