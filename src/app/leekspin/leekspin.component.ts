@@ -9,7 +9,7 @@ import { MetaService } from '../services/meta.service';
   templateUrl: './leekspin.component.html',
   styleUrl: './leekspin.component.scss'
 })
-export class LeekspinComponent {
+export class LeekspinComponent implements OnInit, OnDestroy {
 
   ngOnInit(){
     this.playSound();
