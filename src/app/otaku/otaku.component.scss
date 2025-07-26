@@ -1,5 +1,8 @@
-:host html, body{
-	background-color: #FFC0CB;
-	margin: 0px;
-    padding: 0px;
+html {
+    background-color: #FFC0CB !important;
+    background-image: none !important;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
 }

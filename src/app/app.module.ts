@@ -13,6 +13,8 @@ import { OtakuComponent } from './otaku/otaku.component';
 import { ParamoreComponent } from './paramore/paramore.component';
 import { WhoamiComponent } from './whoami/whoami.component';
 import { NgOptimizedImage } from '@angular/common';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { GoBackComponent } from './shared/go-back/go-back.component'; // Importing the GoBackComponent
 
 // Using modules instead of standalone components. As god intended.
 
@@ -23,7 +25,8 @@ import { NgOptimizedImage } from '@angular/common';
     LeekspinComponent,
     OtakuComponent,
     ParamoreComponent,
-    WhoamiComponent
+    WhoamiComponent,
+    GoBackComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +36,8 @@ import { NgOptimizedImage } from '@angular/common';
     MatDividerModule,
     MatListModule,
     RouterModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatSidenavModule
   ],
   exports: [
     MatToolbarModule,
@@ -42,7 +46,8 @@ import { NgOptimizedImage } from '@angular/common';
     MatDividerModule,
     MatListModule,
     RouterModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatSidenavModule
   ]
 })
 

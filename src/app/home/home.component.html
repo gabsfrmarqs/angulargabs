@@ -16,18 +16,17 @@
 <mat-divider></mat-divider>
 -->
 
+
+
+
 <div class="page-container">
-  <img ngSrc="assets/images/home/wordart.png" alt="wordart" width="1000" height="100">
+  <img ngSrc="assets/images/home/wordart.png" alt="wordart" width="1100" height="100">
 
   <body>
-    <p>welcome friend</p>
+    <p>hello friend</p>
     <img ngSrc="assets/images/puter.jpg" alt="cat on puter" width="256" height="256">
     <br>
 
-    <a [routerLink]="['whoami']">Who am i?</a>
-    <br>
-    <a [routerLink]="['otaku']">Otaku</a>
-    <br><br>
 
     <img ngSrc="assets/images/home/coollinks.png" alt="coollinks" width="400" height="100">
 
@@ -38,23 +37,44 @@
         </a>
         <div>leekspin</div>
       </div>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <div style="text-align: center;">
+        <a style="cursor: pointer;">
+          <img [routerLink]="['otaku']" ngSrc="assets/icon/otaku.gif" alt="otaku" width="32" height="32">
+        </a>
+        <div>otaku</div>
+      </div>
+
+      <mat-divider [vertical]="true"></mat-divider>
+
       <div style="text-align: center;">
         <a style="cursor: pointer;">
           <img [routerLink]="['paramore']" ngSrc="assets/icon/paramore.png" alt="paramore" width="32" height="32">
         </a>
         <div>paramore</div>
       </div>
+
+    
+      <mat-divider [vertical]="true"></mat-divider>
+
+      <div style="text-align: center;">
+        <a style="cursor: pointer;">
+          <img [routerLink]="['whoami']" ngSrc="assets/icon/whoami.png" alt="who am i" width="32" height="32">
+        </a>
+        <div>whoami</div>
+      </div>
+      
     </div>
 
-    <img  ngSrc="assets/images/home/spotify.png" alt="spotify" width="200" height="100">
-    <p class="center-text">wow i listen to music</p>
-    <iframe style="border-radius:1px"
-      src="https://open.spotify.com/embed/playlist/1bQMIHq0CGlZNiR7nPnmJU?utm_source=generator" width="100%"
-      height="500" frameBorder="0" allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br>
 
+    <img  ngSrc="assets/images/home/music.gif" alt="music" width="200" height="100">
+    <p class="center-text">i love last fm</p>
+    <a href="https://www.last.fm/user/gabsfrmarqs"><img src="https://lastfm-recently-played.vercel.app/api?user=gabsfrmarqs" height="auto" width="auto"/></a>
 
-    <div class="social-links">
+    <div style="display: flex; gap: 24px; justify-content: center;" class="social-links">
       <a href="https://github.com/gabsfrmarqs" aria-label="Github" target="_blank" rel="noopener">
         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Github">
           <path
