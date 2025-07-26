@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button'; 
 import { Location } from '@angular/common';
+import { MetaService } from '../services/meta.service';
 
 @Component({
   selector: 'app-leekspin',
@@ -12,6 +13,12 @@ export class LeekspinComponent {
 
   ngOnInit(){
     this.playSound();
+    this.metaService.updateMetaTags({
+      title: 'Leekspin - gabs\' hell',
+      description: 'Ievan Polkka intensifies',
+      image: 'https://marquesgabriel.dev/assets/images/leek.gif',
+      color: '#00FF00'
+    });
   }
 
   ngOnDestroy(){
@@ -39,7 +46,10 @@ export class LeekspinComponent {
     }
   }
 
-  constructor(private location: Location) {}
+  constructor(
+    private location: Location,
+    private metaService: MetaService
+  ) {}
 
   stopSound() {
     if (this.audioElement) {
