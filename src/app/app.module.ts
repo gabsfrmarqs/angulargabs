@@ -15,6 +15,7 @@ import { WhoamiComponent } from './whoami/whoami.component';
 import { NgOptimizedImage } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { GoBackComponent } from './shared/go-back/go-back.component'; // Importing the GoBackComponent
+import { TetoComponent } from './teto/teto.component';
 
 // Using modules instead of standalone components. As god intended.
 
@@ -26,7 +27,8 @@ import { GoBackComponent } from './shared/go-back/go-back.component'; // Importi
     OtakuComponent,
     ParamoreComponent,
     WhoamiComponent,
-    GoBackComponent
+    GoBackComponent,
+    TetoComponent
   ],
   imports: [
     CommonModule,
@@ -37,7 +39,7 @@ import { GoBackComponent } from './shared/go-back/go-back.component'; // Importi
     MatListModule,
     RouterModule,
     NgOptimizedImage,
-    MatSidenavModule
+    MatSidenavModule,
   ],
   exports: [
     MatToolbarModule,
