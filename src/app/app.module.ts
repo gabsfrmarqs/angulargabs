@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';  
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -7,7 +7,6 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';  
-import { BadblogComponent } from './badblog/badblog.component';
 import { LeekspinComponent } from './leekspin/leekspin.component';
 import { OtakuComponent } from './otaku/otaku.component';
 import { ParamoreComponent } from './paramore/paramore.component';
@@ -22,7 +21,6 @@ import { TetoComponent } from './teto/teto.component';
 @NgModule({
   declarations: [
     HomeComponent,
-    BadblogComponent,
     LeekspinComponent,
     OtakuComponent,
     ParamoreComponent,
@@ -50,7 +48,8 @@ import { TetoComponent } from './teto/teto.component';
     RouterModule,
     NgOptimizedImage,
     MatSidenavModule
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
 export class AppModule { }

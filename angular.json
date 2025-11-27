@@ -27,7 +27,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/assets/favicon.ico"
+              "src/assets/favicon.ico",
+              "src/blog"
             ],
             "styles": [
               "src/app/home/home.component.scss",

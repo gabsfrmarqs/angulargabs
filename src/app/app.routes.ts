@@ -4,7 +4,6 @@ import { LeekspinComponent } from './leekspin/leekspin.component';
 import { WhoamiComponent } from './whoami/whoami.component';
 import { ParamoreComponent } from './paramore/paramore.component';
 import { OtakuComponent } from './otaku/otaku.component';
-import { BadblogComponent } from './badblog/badblog.component';
 import { TetoComponent } from './teto/teto.component';
 
 export const routes: Routes = [
@@ -29,11 +28,7 @@ export const routes: Routes = [
         component: OtakuComponent,
     },
     {
-        path: 'blog',
-        component: BadblogComponent
-    },
-    {
         path: 'teto',
         component: TetoComponent
-    }
+    },
 ];
