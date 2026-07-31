@@ -1,5 +1,6 @@
 services:
   angulargabs:
+    restart: unless-stopped
     image: angulargabs:latest
     container_name: angulargabs
     build:
@@ -13,4 +14,4 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
-    restart_policy: unless-stopped
+    
